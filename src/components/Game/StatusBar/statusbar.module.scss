@@ -1,0 +1,29 @@
+.bar {
+    display: flex;
+    padding: 0 10px;
+    line-height: 35px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #101010;
+    border-bottom: 1px solid #000000;
+}
+
+.section {
+    text-align: left;
+}
+
+.logo{
+    flex-grow: 1;
+    text-align: center;
+    color:#ffffff;
+}
+
+.valueContainer {
+    transition: all 100ms linear;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.valueContainerActive{
+    text-shadow: 0 0 5px rgba(#1d1d1d, 0.5);
+}

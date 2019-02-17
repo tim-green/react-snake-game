@@ -1,0 +1,34 @@
+.cell {
+    position: absolute;
+    box-shadow: inset 0 0 1px rgba(#182026, 0.2);
+    transition: background 100ms linear;
+    border-radius: 2px;
+}
+
+.blankCell {
+    background: none;
+}
+
+.snakeCell {
+    background: #1d1d1d;
+}
+
+.fruitCell {
+    background: #c9373f;
+    animation: fruitCellAppear linear 300ms;
+}
+
+.snakeHead {
+    transition: none !important;
+}
+
+@keyframes fruitCellAppear {
+    from {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(#101010, 0.4);
+    }
+    to {
+        transform: scale(1);
+        box-shadow: 0 0 1px rgba(#101010, 0.4);
+    }
+}
